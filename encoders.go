@@ -1,4 +1,4 @@
-
+package mixinapi
 
 func JsonEncoder(
 	obj any,

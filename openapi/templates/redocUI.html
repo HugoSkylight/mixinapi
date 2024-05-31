@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redoc API Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/redoc@latest/redoc.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="redoc-container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/redoc@latest/redoc.min.js"></script>
+    <script>
+        Redoc.init('path/to/your/openapi.yaml', {
+            scrollYOffset: 50,
+            hideDownloadButton: true,
+            hideHostname: false,
+            expandResponses: 'all',
+            requiredPropsFirst: true,
+            theme: {
+                colors: {
+                    primary: {
+                        main: '#1A73E8',
+                    },
+                },
+            },
+        }, document.getElementById('redoc-container'));
+    </script>
+</body>
+</html>

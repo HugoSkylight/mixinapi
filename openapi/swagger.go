@@ -1,0 +1,4 @@
+package openapi
+
+func GetSwaggerHTML() {
+}
